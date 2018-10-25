@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import Travel from "./Travel";
 
 class App extends Component {
   render() {
@@ -8,18 +10,20 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1 className="App-title">Simpsons Quotes</h1>
         </header>
+        <Travel
+          destination="Montpellier"
+          pays="France"
+          distance="800 km"
+          image="https://media.routard.com/image/45/6/montpellier-place-comedie.1491456.jpg"
+        />
+        <Travel
+          destination="Sète"
+          pays="France"
+          distance="840 km"
+          image="http://www.cm-immobilier-balaruc.fr/wp-content/uploads/2011/02/2521979711.jpg"
+        />
       </div>
     );
   }
